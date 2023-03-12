@@ -1,2 +1,4 @@
 # strc-weatherBot-mvn-gradle
-cursorEducation
+check 2 others branches (maven1&maven2 ) 
+
+@cursorEducation
