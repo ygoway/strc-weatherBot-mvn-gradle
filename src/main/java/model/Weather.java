@@ -4,12 +4,12 @@ public class Weather {
 
     private String city;
     private String country;
-    private int temperature;
+    private int temp;
 
-    public Weather(String city, String country, int temperature) {
+    public Weather(String city, String country, int temp) {
         this.city = city;
         this.country = country;
-        this.temperature = temperature;
+        this.temp = temp;
     }
 
     public String getCity() {
@@ -28,12 +28,12 @@ public class Weather {
         this.country = country;
     }
 
-    public int getTemperature() {
-        return temperature;
+    public int getTemp() {
+        return temp;
     }
 
-    public void setTemperature(int temperature) {
-        this.temperature = temperature;
+    public void setTemp(int temp) {
+        this.temp = temp;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class Weather {
         return "Weather{" +
                 "city='" + city + '\'' +
                 ", country='" + country + '\'' +
-                ", temperature=" + temperature +
+                ", temp=" + temp +
                 '}';
     }
 }

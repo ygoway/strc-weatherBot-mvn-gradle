@@ -1,5 +1,6 @@
 package service.Impl;
 
+import model.Weather;
 import service.WeatherService;
 
 import java.util.Map;
@@ -15,7 +16,7 @@ public class WeatherServiceImpl implements WeatherService {
 
         WeatherResponse weatherResponse = fakeHttpClient(city.toLowerCase());
 
-        var weather = null;
+        Weather weather = null;
         if (weatherResponse.statusCode != WRONG_STATUS_CODE) {
             weather = weatherResponse.body;
         }
